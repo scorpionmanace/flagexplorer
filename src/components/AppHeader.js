@@ -1,10 +1,11 @@
 import React from "react";
 import Constants from "../commons/Constants";
+import "../styles/common.css";
 
 const AppHeader = () => (
   <header className="header-container bg-transparent" id="AppHeader">
-    <h1>{Constants.flagPicker}</h1>
-    <h2 className="lead-text">
+    <h1 className="lead-text__heading">{Constants.flagPicker}</h1>
+    <h2 className="lead-text__subheading">
       {Constants.headerText} <u>{Constants.steps + "."}</u>
     </h2>
   </header>

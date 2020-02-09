@@ -1,14 +1,27 @@
 import React, { useState } from "react";
+import Constants from "../commons/Constants";
 
 const HorizontalList = props => {
-  const { listItems } = props;
+  const { listItems, onClear } = props;
 
   return (
-    <div className="items-container">
-      {listItems.map(({ country, flag }) => (
-        <div className="item">{flag}</div>
-      ))}
-    </div>
+    <>
+      <div className="h-items-container flex d-wrap f-justify-center p-y-1">
+        {listItems.map(({ country, flag }) => (
+          <div className="list-item lead-text__large" key={country}>
+            {flag}
+          </div>
+        ))}
+      </div>
+      <button
+        className="btn btn-primary"
+        onClick={() => {
+          onClear();
+        }}
+      >
+        {Constants.clearFlags}
+      </button>
+    </>
   );
 };
 

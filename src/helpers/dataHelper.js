@@ -22,7 +22,6 @@ export const getCountriesFlagMap = () =>
 
 export const getCountriesOfContinent = continentName => {
   continentCountriesMap = continentCountriesMap || getContinentCountriesMap();
-  console.log(continentCountriesMap[continentName]);
   return continentCountriesMap[continentName];
 };
 

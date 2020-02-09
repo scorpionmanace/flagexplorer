@@ -1,0 +1,54 @@
+.stepper {
+  width: calc(100vw / 3);
+}
+input[type="text"].search-input {
+  width: 15rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  outline-width: 0;
+  padding: 0.5rem;
+}
+.input-wrapper {
+  position: relative;
+}
+ul.dropdown-group {
+  position: relative;
+  top: 0;
+  left: calc(50% - 7.5rem);
+  z-index: 1;
+  max-height: 20rem;
+  padding: 0;
+  margin: 0;
+}
+ul.dropdown-group > li {
+  list-style-type: none;
+  width: 15rem;
+  padding: 0.5rem 0;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-bottom: 0;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+ul.dropdown-group > li:last-child {
+  border-bottom: 1px solid #aaa;
+}
+
+ul.dropdown-group > li:hover,
+ul.dropdown-group > li:active {
+  background-color: #aaa;
+  color: #f1f1f1;
+}
+
+ul.dropdown-group > li .list-item-val {
+  text-align: center;
+  flex-grow: 10;
+  cursor: pointer;
+}
+
+ul.dropdown-group > li input[type="checkbox"] {
+  flex-grow: 2;
+}

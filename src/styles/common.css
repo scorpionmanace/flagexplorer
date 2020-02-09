@@ -1,0 +1,121 @@
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.d-row {
+  flex-direction: row;
+}
+
+.d-wrap {
+  flex-wrap: wrap;
+}
+
+.f-align-start {
+  align-content: flex-start;
+}
+
+.f-align-start {
+  align-content: center;
+}
+
+.f-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.f-justify-start {
+  justify-content: flex-start;
+}
+.f-justify-space-between {
+  justify-content: space-between;
+}
+
+.f-justify-center {
+  justify-content: center;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-r-2 {
+  margin-right: 2rem;
+}
+
+.m-l-2 {
+  margin-left: 2rem;
+}
+
+.m-x-2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.lead-text__heading {
+  color: #43a047;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.lead-text__subheading {
+  color: #888;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.lead-text__large {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.lead-text__medium-large {
+  font-size: 2rem;
+  color: #444;
+  font-weight: 400;
+}
+
+.lead-text__medium {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.p-y-1 {
+  padding: 0.5rem;
+}
+.p-y-2 {
+  padding: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  min-width: 6rem;
+  background-color: #aaa;
+  border: 1px solid #666;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #29b6f6;
+  border: 1px solid #29b6f6;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  color: #fff;
+  background-color: #0288d1;
+  border: 1px solid #0288d1;
+}

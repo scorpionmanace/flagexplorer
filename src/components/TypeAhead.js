@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, createRef } from "react";
 import ListGroup from "./ListGroup";
 
 const TypeAhead = props => {
@@ -9,36 +9,57 @@ const TypeAhead = props => {
     componentName,
     onSelectionChange,
     onInputChange,
-    selections
+    selections,
+    placeholderText
   } = props;
-  // const [items, setItems] = useState(listItems);
+
+  const [dropdownVisible, setDropdonwVisible] = useState(false);
 
   const keyUpHandler = event => {
     onInputChange(event.target.value);
-    // console.log(event.target.value);
-
-    // const { value } = event.target;
-    // if (value === "") {
-
-    //   setItems(listItems);
-    // } else {
-    //   setItems(
-    //     listItems.filter(
-    //       itemVal => itemVal.toLowerCase().indexOf(value.toLowerCase()) !== -1
-    //     )
-    //   );
-    // }
   };
 
+  const toggleDropdown = event => {
+    setDropdonwVisible(!dropdownVisible);
+  };
+
+  const changeDropdown = event => {
+    setDropdonwVisible(false);
+  };
+
+  let textRef = createRef();
+
+  console.log(textRef);
+  let id = `typeahead-${componentName}`;
+  document.addEventListener(
+    "click",
+    event => {
+      if (document.getElementById(id).contains(event.target)) {
+        return;
+      }
+      document.removeEventListener("click", this, false);
+      changeDropdown();
+    },
+    false
+  );
   return (
-    <div id={componentName + "Component"}>
+    <div className="type__ahead" id={id} ref={textRef}>
       <div className="input-wrapper">
-        <input type="text" onKeyUp={keyUpHandler} />
+        <input
+          type="text"
+          className="search-input"
+          placeholder={placeholderText}
+          onKeyUp={keyUpHandler}
+          onFocus={toggleDropdown}
+        />
         <ListGroup
           type={type}
           listItems={listItems}
           onSelectionChange={onSelectionChange}
           selections={selections}
+          toggleVisibility={toggleDropdown}
+          componentName={componentName}
+          isVisible={dropdownVisible}
         />
       </div>
     </div>

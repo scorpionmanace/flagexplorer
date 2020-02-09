@@ -21,9 +21,7 @@ const ListItem = props => {
       ) : (
         ""
       )}
-      <label className="" for="">
-        {item}
-      </label>
+      <label className="list-item-val">{item}</label>
     </li>
   );
 };
