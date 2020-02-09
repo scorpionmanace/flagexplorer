@@ -1,6 +1,8 @@
 import React, { useState, createRef } from "react";
 import ListGroup from "./ListGroup";
 
+// Search component to search and/or select items form the dropdown list
+// Used here to search continents and countries
 const TypeAhead = props => {
   console.log("Type Ahead:", props);
   const {

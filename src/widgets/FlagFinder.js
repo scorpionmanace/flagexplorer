@@ -11,6 +11,8 @@ import {
 import Constants from "../commons/Constants";
 
 import "../styles/common.css";
+
+// Parent component aka FlagFinder widget to follow step selection guid to see flags of those countries
 const FlagFinder = () => {
   const [selectedContinent, setSelectedContinent] = useState([]);
   const [countriesList, setCountriesList] = useState([]);

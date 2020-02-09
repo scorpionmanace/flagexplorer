@@ -1,8 +1,7 @@
 import React from "react";
 import { ListTypes } from "../commons/enums";
-/**
- *
- */
+
+// Single entry injected through props
 const ListItem = props => {
   const { type, item, onclick, isChecked = false } = props;
 

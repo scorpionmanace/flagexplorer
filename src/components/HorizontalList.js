@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Constants from "../commons/Constants";
-
+// Used to diplay flgs in a horizontal list format (can also be used to list other items in horizontal list format)
 const HorizontalList = props => {
   const { listItems, onClear } = props;
 

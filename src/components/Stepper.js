@@ -3,6 +3,8 @@ import TypeAhead from "./TypeAhead";
 import { StepperType } from "../commons/enums";
 import HorizontalList from "./HorizontalList";
 import "../styles/stepper.css";
+
+// Parent component to render steps
 const Stepper = props => {
   const {
     componentId,
