@@ -1,3 +1,47 @@
+# Project
+
+```
+Application lets you explore flags of the countries based on the continent selected
+```
+
+## Structure
+
+## component
+
+```
+The folder contains atomic designed components (react) to create a whole functionality out of it. Most of the components used are inteded to be stateless (few exceptions)
+```
+
+## widgets
+
+```
+These are stateful react components formed out of smaller components to perform one major functionality.
+```
+
+## helpers
+
+```
+Util/Helper methods to perform functionality like reducing data to extract coutnries, continents and flags
+```
+
+## commons
+
+```
+Consist of commonly used entities like message constants, enums etc.
+```
+
+## styles
+
+```
+CSS that can be used commonly or per component based
+```
+
+## tests
+
+```
+Unit tests coverage
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
