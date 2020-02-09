@@ -2,6 +2,7 @@ import React from "react";
 import TypeAhead from "./TypeAhead";
 import { StepperType } from "../commons/enums";
 import HorizontalList from "./HorizontalList";
+import Constants from "../commons/Constants";
 import "../styles/stepper.css";
 
 // Parent component to render steps
@@ -36,7 +37,9 @@ const Stepper = props => {
           />
           {selections.length > 0 ? (
             <div className="selection-container p-y-1">
-              <label className="lead-text__medium">Your Selections</label>
+              <label className="lead-text__medium">
+                {Constants.yourSelections}
+              </label>
               <div className="selection-value-wrapper">
                 {selections.map(selection => {
                   return (

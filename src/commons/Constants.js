@@ -5,7 +5,7 @@ const Constants = {
   steps: "3 Steps",
   step: num => `Step ${num}`,
   selectContinent: `Select a continent.`,
-  youtSelections: "Your Selections",
+  yourSelections: "Your Selections",
   selectCountries: `Now, Select Countries`,
   selectedCountriesFlags: "Selected Countries Flags",
   clearFlags: "Clear Flags"
